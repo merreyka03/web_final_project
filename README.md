@@ -1,2 +1,1 @@
-"# web_final_project" 
-"# web_final_project" 
+In this project, the languages HTML, CSS, JAVASCRIPT, their main functions, properties and parameters were considered. In this work, we tried to create our website using these languages. I wrote the JAVASCRIPT and CSS part of the entire website
