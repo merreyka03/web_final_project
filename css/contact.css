@@ -1,0 +1,78 @@
+.contact-form {
+	margin-top: 40px;
+	padding: 15px 30px;
+
+	border-radius: 12px;
+	background-color: skyblue;
+
+	display: grid;
+	grid-template-rows: max-content 1fr;
+	grid-template-columns: 1fr;
+	gap: 20px;
+}
+
+.contact-form > .title {
+	font-size: 1.45rem;
+	font-weight: 600;
+	color: #000;
+	text-align: center;
+
+	padding-bottom: 15px;
+	border-bottom: 1px solid #eee;
+}
+
+.contact-form > .fileds {
+	display: grid;
+	grid-template-rows: 30px 30px auto auto;
+	grid-template-columns: 1fr;
+	gap: 15px;
+}
+
+.contact-form > .fileds > .field > input {
+	border: none;
+	outline: none;
+
+	padding: 4px 12px;
+
+	font-size: 1rem;
+	color: #000;
+}
+
+.contact-form > .fileds > #message {
+	border: none;
+	outline: none;
+
+	padding: 4px 12px;
+
+	font-size: 1rem;
+	color: #000;
+
+	resize: none;
+
+	height: 200px;
+}
+
+.contact-form > .fileds > button {
+	border: none;
+	outline: none;
+
+	padding: 10px 20px;
+	font-size: 1rem;
+	color: #000;
+
+	background-color: #fff;
+
+	width: 100%;
+
+	margin-top: 20px;
+
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form > .fileds > button:hover {
+	box-shadow: 0 0 8px #fff;
+}
+
+.contact-form > .fileds > button:active {
+	transform: scale(0.85);
+}

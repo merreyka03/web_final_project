@@ -1,0 +1,72 @@
+.navbar {
+	width: 100%;
+	height: 64px;
+
+	/* 固定在顶部, 滚动也不会走开 */
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+
+	display: flex;
+	align-items: center;
+}
+
+.navbar > .logo {
+	width: 42px;
+	height: 42px;
+	object-fit: cover;
+}
+
+.navbar > .title {
+	font-size: 1.46rem;
+	font-weight: 600;
+	color: #000;
+	margin-left: 12px;
+}
+
+.navbar > .links {
+	margin-left: auto;
+
+	display: flex;
+	gap: 16px;
+}
+
+.navbar > .links > .link {
+	cursor: pointer;
+
+	font-size: 1rem;
+	color: rgb(39, 124, 252);
+	text-align: center;
+
+	padding: 6px 12px;
+
+	border: 1px solid rgb(39, 124, 252);
+
+	transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar > .links > .link:hover {
+	color: rgb(1, 70, 173);
+	box-shadow: 0 0 2px rgb(39, 124, 252);
+}
+
+@media screen and (max-width: 800px) {
+	.navbar {
+		height: auto;
+
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.navbar > .links {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.navbar > .links {
+		flex-direction: column;
+		gap: 10px;
+	}
+}

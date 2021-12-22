@@ -1,0 +1,71 @@
+.admin-page {
+	display: grid;
+	grid-template-rows: max-content max-content;
+	grid-template-columns: 1fr;
+
+	min-height: 100vh;
+
+	overflow: hidden;
+}
+
+.admin-page > .title {
+	font-size: 1.45rem;
+	font-weight: 600;
+
+	padding: 20px 0;
+	border-bottom: 1px solid #000;
+}
+
+.admin-page > .user-table {
+	margin-top: 20px;
+
+	border: 1px solid #000;
+
+	width: 100%;
+}
+
+.admin-page > .user-table th,
+.admin-page > .user-table td {
+	border: 1px solid #000;
+
+	text-align: center;
+}
+
+.admin-page > .user-table .op {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.admin-page > .user-table .op button {
+	border: none;
+	outline: none;
+
+	padding: 5px 10px;
+	margin: 5px 0;
+
+	font-size: 1rem;
+	color: #fff;
+
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-page > .user-table .op .disable {
+	background-color: red;
+}
+
+.admin-page > .user-table .op .enable {
+	background-color: green;
+}
+
+.admin-page > .user-table .op .disable:hover {
+	box-shadow: 0 0 8px red;
+}
+
+.admin-page > .user-table .op .enable:hover {
+	box-shadow: 0 0 8px green;
+}
+
+.admin-page > .user-table .op button:active {
+	transform: scale(0.85);
+}

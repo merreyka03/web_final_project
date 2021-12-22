@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Bul·Coffee</title>
+
+		<link rel="shortcut icon" href="coffee.ico" type="image/x-icon" />
+
+		<link rel="stylesheet" href="css/customize.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/navbar.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/contact.css" />
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/navbar.js"></script>
+	</head>
+
+	<body>
+		<div class="layout">
+			<header class="layout navbar">
+				<img src="images/coffee.png" alt="logo" class="logo" />
+				<h1 class="title">Our coffe shop</h1>
+
+				<ul class="links">
+					<li class="link"><a  onclick="link1()" href="index.html" >Home</a></li>
+					<li class="link"><a  onclick="link2()" href="coffer.html" >Coffee</a></li>
+					<li class="link"><a  onclick="link3()" href="contact.html" >Contact</a></li>
+					<li class="link"><a  onclick="link4()" href="login.html" >Login</a></li>
+				</ul>
+			</header>
+			<!-- 解决导航栏高度塌陷, navbar.js中实现 -->
+			<div class="navbar-support"></div>
+
+			<form class="contact-form">
+				<h1 class="title">Welcome to consult</h1>
+
+				<div class="fileds">
+					<div class="field">
+						<label for="name">Name</label>
+						<input type="text" id="name" />
+					</div>
+
+					<div class="field">
+						<label for="phoneNumber">Phone number</label>
+						<input type="tel" value="+7" id="phoneNumber" />
+					</div>
+
+					<textarea
+						id="message"
+						placeholder="You want to tell us..."
+					></textarea>
+
+					<button type="submit">Submit</button>
+				</div>
+			</form>
+
+			<footer class="footer">Copyright © 2021 Our Coffee by Bulbul and Merey</footer>
+		</div>
+	</body>
+</html>

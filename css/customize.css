@@ -1,0 +1,67 @@
+/* 把我们所有标签的内外边距清零 */
+* {
+	margin: 0;
+	padding: 0;
+
+	/* css3盒子模型 */
+	box-sizing: border-box;
+}
+
+body {
+	/* CSS3 抗锯齿形 让文字显示的更加清晰 */
+	-webkit-font-smoothing: antialiased;
+
+	font-family: Poppins, sans-serif;
+	font-size: 1rem;
+}
+
+/* 去掉li 的小圆点 */
+li {
+	list-style: none;
+}
+
+img {
+	/* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+	border: 0;
+	/* 取消图片底侧有空白缝隙的问题 */
+	vertical-align: middle;
+}
+
+button {
+	/* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 576px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+	html {
+		font-size: 17px;
+	}
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+	html {
+		font-size: 19px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
+}
